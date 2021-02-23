@@ -1,0 +1,40 @@
+API para cadastro de usuário, pergunta,envio de e-mails
+
+Com:
+  .calculo de NPS
+  .TypeScript
+  .yarn
+  .npm
+  .node
+  .Insomnia => Simula o acesso do clente a aplicação
+
+Comandos usados:
+    .yarn init -Y                => criar o arquivos package.json
+    .yarn add express            => install dependencia express: micro-framework(rotas,server)
+    .yarn add @types/express -D  => garante acesso as bibliotecas do express
+    .yarn add Typescript -de     => install o TypeScript
+    .yarn tsc --init             => inicia o TypeScript dentro da aplicação
+    .yarn add ts-node-dev -D         => Converte o code TypeScript em Js em tempo de execução
+    .yarn dev                    => Iniciar o server 
+
+
+**************************
+              NOTAS
+************************** 
+
+  GET     = Buscar;
+  POST    = Enviar;
+  PUT     = alterar;
+  DELETE  = Deletar;
+  PACTH   = Alteração especifica
+  
+  Em package.json:{'
+    
+    "scripts": { 
+      "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+    }
+
+    ts-node-dev src/server.ts     => Converte typescripe em JS o arquivo server.ts
+    --transpile-only              => Desativa checagem de erro nas paginas(já feita pelo VS code)
+    --ignore-watch node_modules   => ignora oq aconte em  node_modules
+  }
