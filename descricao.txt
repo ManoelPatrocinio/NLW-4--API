@@ -7,6 +7,8 @@ Com:
   .npm
   .node
   .Insomnia => Simula o acesso do clente a aplicação
+  .TypeORM  => Drives para o BD
+  .sqlite
 
 Comandos usados:
     .yarn init -Y                => criar o arquivos package.json
@@ -16,6 +18,8 @@ Comandos usados:
     .yarn tsc --init             => inicia o TypeScript dentro da aplicação
     .yarn add ts-node-dev -D         => Converte o code TypeScript em Js em tempo de execução
     .yarn dev                    => Iniciar o server 
+    .yarn add typeorm reflect-metadata => install typeorm
+    .yarn add typeorm --save           => install typeorm
 
 
 **************************

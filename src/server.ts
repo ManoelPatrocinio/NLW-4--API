@@ -1,4 +1,6 @@
-import express, { request, response } from "express";
+import "reflect-metadata";
+import express from "express";
+import "./database";
 
 const app = express();
 
@@ -13,5 +15,6 @@ app.get("/", (request, response) =>{
 app.post("/", (request, response) =>{
     return response.json({ message: "Hello world"});
 });
+
 
 app.listen(3333, () => console.log("server is running !")); //execução do server na porta 3333
