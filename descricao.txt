@@ -1,4 +1,4 @@
-API para cadastro de usuário, pergunta,envio de e-mails
+API para cadastro de usuário, pergunta e envio de e-mails
 
 Com:
   .calculo de NPS
@@ -6,20 +6,25 @@ Com:
   .yarn
   .npm
   .node
-  .Insomnia => Simula o acesso do clente a aplicação
-  .TypeORM  => Drives para o BD
-  .sqlite
+  .Insomnia                               => Simula o acesso do clente a aplicação
+  .TypeORM                                => Drives para o BD
+  .BD sqlite 
+  .extençã sqlite
 
 Comandos usados:
-    .yarn init -Y                => criar o arquivos package.json
-    .yarn add express            => install dependencia express: micro-framework(rotas,server)
-    .yarn add @types/express -D  => garante acesso as bibliotecas do express
-    .yarn add Typescript -de     => install o TypeScript
-    .yarn tsc --init             => inicia o TypeScript dentro da aplicação
-    .yarn add ts-node-dev -D         => Converte o code TypeScript em Js em tempo de execução
-    .yarn dev                    => Iniciar o server 
-    .yarn add typeorm reflect-metadata => install typeorm
-    .yarn add typeorm --save           => install typeorm
+    .yarn init -Y                         => criar o arquivos package.json
+    .yarn add express                     => install dependencia express: micro-framework(rotas,server)
+    .yarn add @types/express -D           => garante acesso as bibliotecas do express
+    .yarn add Typescript -de              => install o TypeScript
+    .yarn tsc --init                      => inicia o TypeScript dentro da aplicação
+    .yarn add ts-node-dev -D              => Converte o code TypeScript em Js em tempo de execução
+    .yarn dev                             => Iniciar o server 
+    .yarn add typeorm reflect-metadata    => install typeorm
+    .yarn add typeorm --save              => install typeorm
+    .yarn typeorm migration:run           => executa a migration
+    .yarn add uuid                        => Add biblioteca para criar uuid
+    .yarn add @types/uuid -D              => Add o tipo uuid
+
 
 
 **************************

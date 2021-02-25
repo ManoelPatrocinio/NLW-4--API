@@ -1,20 +1,9 @@
 import 'reflect-metadata';
 import express from "express";
 import './database';
+import { router } from './routes';
 
 const app = express();
-
-/*
-* ROTAS
-*/
-
-app.get("/", (request, response) =>{
-    return response.send("Hello world");
-});
-
-app.post("/", (request, response) =>{
-    return response.json({ message: "Hello world"});
-});
-
-
+app.use(express.json());
+app.use(router);
 app.listen(3333, () => console.log("server is running !")); //execução do server na porta 3333
