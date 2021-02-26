@@ -24,6 +24,11 @@ Comandos usados:
     .yarn typeorm migration:run           => executa a migration
     .yarn add uuid                        => Add biblioteca para criar uuid
     .yarn add @types/uuid -D              => Add o tipo uuid
+    .yarn add jest @types/jest -D         => Add jest( usado para testar a api)
+    .yarn jest --init                     => Criar o arquivo de configuração do jest
+    .yarn add ts-jest -D                  => Add biblioteca para trabalhar com typescripe nos testes
+    .yarn add supertest @types/supertest -D => Add ferramenta de auxilo para os testes
+
 
 
 
