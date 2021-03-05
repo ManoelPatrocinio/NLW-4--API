@@ -9,7 +9,8 @@ Com:
   .Insomnia                               => Simula o acesso do clente a aplicação
   .TypeORM                                => Drives para o BD
   .BD sqlite 
-  .extençã sqlite
+  .extenção sqlite
+  .Handlebars                             => Criação de templates
 
 Comandos usados:
     .yarn init -Y                         => criar o arquivos package.json
@@ -28,6 +29,7 @@ Comandos usados:
     .yarn jest --init                     => Criar o arquivo de configuração do jest
     .yarn add ts-jest -D                  => Add biblioteca para trabalhar com typescripe nos testes
     .yarn add supertest @types/supertest -D => Add ferramenta de auxilo para os testes
+    .yarn add handlebars                    => add handlebars
 
 
 
@@ -52,3 +54,5 @@ Comandos usados:
     --transpile-only              => Desativa checagem de erro nas paginas(já feita pelo VS code)
     --ignore-watch node_modules   => ignora oq aconte em  node_modules
   }
+
+  .HBS  => extenção do handlebars
