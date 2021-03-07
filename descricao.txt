@@ -1,6 +1,6 @@
 API para cadastro de usuário, pergunta e envio de e-mails
 
-Com:
+******************************************** TECNOLOGIAS ******************************************************************
   .calculo de NPS
   .TypeScript
   .yarn
@@ -12,39 +12,49 @@ Com:
   .extenção sqlite
   .Handlebars                             => Criação de templates
 
-Comandos usados:
-    .yarn init -Y                         => criar o arquivos package.json
-    .yarn add express                     => install dependencia express: micro-framework(rotas,server)
-    .yarn add @types/express -D           => garante acesso as bibliotecas do express
-    .yarn add Typescript -de              => install o TypeScript
-    .yarn tsc --init                      => inicia o TypeScript dentro da aplicação
-    .yarn add ts-node-dev -D              => Converte o code TypeScript em Js em tempo de execução
-    .yarn dev                             => Iniciar o server 
-    .yarn add typeorm reflect-metadata    => install typeorm
-    .yarn add typeorm --save              => install typeorm
-    .yarn typeorm migration:run           => executa a migration
-    .yarn add uuid                        => Add biblioteca para criar uuid
-    .yarn add @types/uuid -D              => Add o tipo uuid
-    .yarn add jest @types/jest -D         => Add jest( usado para testar a api)
-    .yarn jest --init                     => Criar o arquivo de configuração do jest
-    .yarn add ts-jest -D                  => Add biblioteca para trabalhar com typescripe nos testes
-    .yarn add supertest @types/supertest -D => Add ferramenta de auxilo para os testes
-    .yarn add handlebars                    => add handlebars
+**********************  COMANDOS USADOS ****************************************************************************************
+    .yarn init -Y                             => criar o arquivos package.json
+    .yarn add express                         => install dependencia express: micro-framework(rotas,server)
+    .yarn add @types/express -D               => garante acesso as bibliotecas do express
+    .yarn add Typescript -de                  => install o TypeScript
+    .yarn tsc --init                          => inicia o TypeScript dentro da aplicação
+    .yarn add ts-node-dev -D                  => Converte o code TypeScript em Js em tempo de execução
+    .yarn dev                                 => Iniciar o server 
+    .yarn add typeorm reflect-metadata        => install typeorm
+    .yarn add typeorm --save                  => install typeorm
+    .yarn typeorm migration:run               => executa a migration
+    .yarn add uuid                            => Add biblioteca para criar uuid
+    .yarn add @types/uuid -D                  => Add o tipo uuid
+    .yarn add jest @types/jest -D             => Add jest( usado para testar a api)
+    .yarn jest --init                         => Criar o arquivo de configuração do jest
+    .yarn add ts-jest -D                      => Add biblioteca para trabalhar com typescripe nos testes
+    .yarn add supertest @types/supertest -D   => Add ferramenta de auxilo para os testes
+    .yarn add handlebars                      => add handlebars
+    .yarn add yup                             => add biblioteca de validação
+    .yarn add express-async-errors            => add biblioteca para o express lidar com os erros persolizados
 
 
 
 
-**************************
-              NOTAS
-************************** 
 
+******************************************************************************
+                             NOTAS
+****************************************************************************** 
+
+
+********************** TIPO DE MÉTODOS ***************************************
   GET     = Buscar;
   POST    = Enviar;
   PUT     = alterar;
   DELETE  = Deletar;
   PACTH   = Alteração especifica
+
+********************** TIPO DE PARAMENTROS DE ROTAS *************************************
+*  Route Params => Parametros que compõe a rota
+*  Query Params => Buscar, paginação, não obrigatório, composto por CHAVE e VALOR ex: u=9373sd899ssd98
   
-  Em package.json:{'
+  
+Em package.json:{'
     
     "scripts": { 
       "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
@@ -56,3 +66,12 @@ Comandos usados:
   }
 
   .HBS  => extenção do handlebars
+
+********************** REGRAS DO CALCULO DE NPS ********************************************
+
+* Detratores => 0 a 6
+* Passivos   => 7 a 8   => são "removidos" do calculo, não fazem diferênça
+* Promotores => 9 a 10
+
+* CALCULO: ( Nº de Promotores - Nº de Detratores) / (Nº de respondentes) * 100
+

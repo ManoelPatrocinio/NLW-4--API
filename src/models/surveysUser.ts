@@ -5,6 +5,7 @@ import { User } from "./User";
 
 @Entity("surveys_users")
 class SurveyUser{
+  
     
     @PrimaryColumn()
     readonly id: string;
